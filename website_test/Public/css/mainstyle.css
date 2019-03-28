@@ -1,0 +1,392 @@
+/*-----------------------Index.php---------------------------*/
+* 
+{
+    margin: 0;
+    padding: 0;
+}
+
+.container_image
+{
+    background-image:url(../images/gymindex.jpg);
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    
+    
+}
+
+
+.navbar-brand 
+{
+    
+    font-family: serif;
+    
+    
+    
+}
+
+#navbar-nav
+{
+    background-color: black;
+}
+
+
+
+nav li {
+    
+    display: inline-block;
+    text-align: left;
+    
+    position: relative;
+     margin-left: 106px;
+    padding-top: 0px;
+    
+    
+}
+nav a:hover {
+    
+    color: black;
+    
+}
+
+nav a::before {
+    
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: black;
+    
+    position: absolute;
+    width: 0%;
+    top: 0;
+    
+    transition: all ease-in-out 200ms;
+}
+
+nav a:hover::before {
+    
+    width: 100%;
+}
+
+.Welcome-Text_index 
+{
+    padding: 50px 100px;
+    margin-top: -145px;
+    background-color: #fff;
+    box-shadow: 0 0 20px 7px rgba(0,0,0,0.2);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+
+
+/*----------------Workout_add.php styling-----------------------*/
+
+* {
+    
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    
+    display: inline-block;
+    text-align: left;
+    
+    position: relative;
+     margin-left: 200px;
+    padding-top: 0px;
+    
+    
+}
+
+.container_image2
+{
+    background-image: url(../images/athlete-biceps.jpg);
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.navbar-brand 
+{
+    
+    font-family: serif;
+    
+    
+    
+}
+
+#navbar-nav
+{
+    background-color: black;
+}
+
+
+
+nav li {
+    
+    display: inline-block;
+    text-align: left;
+    
+    position: relative;
+     margin-left: 106px;
+    padding-top: 0px;
+    
+    
+}
+nav a:hover {
+    
+    color: black;
+    
+}
+
+nav a::before {
+    
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: black;
+    
+    position: absolute;
+    width: 0%;
+    top: 0;
+    
+    transition: all ease-in-out 200ms;
+}
+
+nav a:hover::before {
+    
+    width: 100%;
+}
+
+.Welcome-Text_workout_add
+{
+    padding: 25px 100px;
+    margin-top: -135px;
+    background-color: #fff;
+    
+    box-shadow: 0 0 20px 7px rgba(0,0,0,0.2);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+}
+
+#main-content-add 
+{
+/*    padding-left: 50px;*/
+    text-align: center;
+/*    margin-left: 400px;*/
+/*    margin-right: 370px;*/
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.workout-list 
+{
+    position: relative;
+    padding: 50px;
+    right: 450px;
+    
+        
+}
+
+.model-pic
+{
+     width: 150px;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    
+}
+
+
+
+.chest 
+{
+    position: relative;
+    padding: 50px;
+    left: 380px;
+    bottom: 220px;
+    
+}
+
+.model-pic2
+{
+   
+    position: relative;
+    left: 380px;
+    bottom: 378px;
+    
+}
+
+.back 
+{
+    position: relative;
+    padding: 50px;
+    left: 750px;
+    bottom: 420px;
+    
+}
+
+.model-pic3 
+{
+    position: relative;
+    left: 750px;
+    bottom: 580px;
+}
+
+.biceps 
+{
+    
+    position: relative;
+    bottom: -20px;
+    left:2px;
+}
+
+.model-pic4 
+{
+    position: relative;
+    bottom: 105px
+}
+
+.triceps
+{
+    position: relative;
+    left: 385px;
+    bottom: 90px;
+}
+
+.model-pic5
+{
+    position: relative;
+    bottom: 210px;
+    left: 390px;
+}
+
+.abs 
+{
+    position: relative;
+    bottom: 193px;
+    left: 760px;
+}
+
+
+
+.model-pic6
+{
+    position: relative;
+    bottom: 310px;
+    left: 760px;
+    
+}
+
+form input {
+    margin-bottom: 12px;
+}
+
+* {
+    
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    
+    display: inline-block;
+    text-align: left;
+    
+    position: relative;
+     margin-left: 200px;
+    padding-top: 0px;
+    
+    
+}
+
+.model-pic4x
+{
+    margin-right: 485px;
+    margin-top: 100px;
+}
+
+
+
+/*-------------------------Edit workout page------------*/
+
+.container_image3
+{
+    background-image: url(../images/gympic.jpg);
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.navbar-brand 
+{
+    
+    font-family: serif;
+    
+    
+    
+}
+
+#navbar-nav
+{
+    background-color: black;
+}
+
+
+
+nav li {
+    
+    display: inline-block;
+    text-align: left;
+    
+    position: relative;
+     margin-left: 106px;
+    padding-top: 0px;
+    
+    
+}
+nav a:hover {
+    
+    color: black;
+    
+}
+
+nav a::before {
+    
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: black;
+    
+    position: absolute;
+    width: 0%;
+    top: 0;
+    
+    transition: all ease-in-out 200ms;
+}
+
+nav a:hover::before {
+    
+    width: 100%;
+}
+
+.Welcome-Text_workout_edit
+{
+    padding: 25px 100px;
+    margin-top: -80px;
+    background-color: #fff;
+    
+    box-shadow: 0 0 20px 7px rgba(0,0,0,0.2);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+col {
+    border: 1px solid black;
+}

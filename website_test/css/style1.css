@@ -1,0 +1,89 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+}
+
+#header 
+{
+    background-image:url(../images/gymindex.jpg);
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    
+    
+}
+
+
+.navbar-brand 
+{
+    
+    font-family: serif;
+    
+    
+    
+}
+
+#navbar-nav
+{
+    background-color: black;
+}
+
+
+
+nav li {
+    
+    display: inline-block;
+    text-align: left;
+    
+    position: relative;
+     margin-left: 106px;
+    padding-top: 0px;
+    
+    
+}
+nav a:hover {
+    
+    color: black;
+    
+}
+
+nav a::before {
+    
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: black;
+    
+    position: absolute;
+    width: 0%;
+    top: 0;
+    
+    transition: all ease-in-out 200ms;
+}
+
+nav a:hover::before {
+    
+    width: 100%;
+}
+
+.Welcome-Text 
+{
+    padding: 50px 100px;
+    margin-top: -100px;
+    background-color: #fff;
+    
+    box-shadow: 0 0 20px 7px rgba(0,0,0,0.2);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+}
+
+
+
+
+
+
+
+
