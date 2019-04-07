@@ -5,12 +5,16 @@ if(isset($_POST) & !empty($_POST)) {
     $email = mysqli_real_escape_string($connection, $_POST['email']);
     $password = md5($_POST['password']);
     
-    $sql = "INSERT INTO `login` (username, email, password) VALUES ('$username', '$email', '$password')";
+    $sql = "INSERT INTO `loginuser` (username, email, password) VALUES ('$username', '$email', '$password')";
+    
     $result = mysqli_query($connection, $sql);
     if($result){
-        $smsg = "User Registration Successful";
+        echo  "User Registration Successful. Now please login";
+        
     }else{
-        $fmsg =  "User Registration Failed";
+        
+        echo mysqli_error($connection);
+        echo  "User registration failed, please try again";
     }
 }
 

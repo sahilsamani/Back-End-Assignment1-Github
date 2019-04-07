@@ -5,18 +5,20 @@ if(isset($_POST) & !empty($_POST)) {
     $username = mysqli_real_escape_string($connection, $_POST['username']);
     $password = md5($_POST['password']);
     
-    $sql = "SELECT * FROM `login` WHERE username='$username' AND password='$password'";
+    $sql = "SELECT * FROM `loginuser` WHERE username='$username' AND password='$password'";
     $result = mysqli_query($connection, $sql);
     $count = mysqli_num_rows($result);
     if($count == 1) {
+        $_SESSION['is_login'] = true;
         $_SESSION['username'] = $username;
+        header("Location: workout_add.php");
     }else{
-        $fmsg =  "invalid username/password";
+        echo "Invalid username/password";
     }
 }
-if(isset($_SESSION['username'])) {
-    $smsg =  "User already logged in";
-}
+
+
+
 
 
 ?>
