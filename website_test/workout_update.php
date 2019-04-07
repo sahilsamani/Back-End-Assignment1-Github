@@ -3,7 +3,7 @@
 
 	
     // include the config file that we created before
-    require "./config.php";
+    require "./configcontent.php";
     require "./common-part2.php";
     
     // this is called a try/catch statement 

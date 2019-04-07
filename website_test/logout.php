@@ -6,7 +6,7 @@ header('Location: index.php');
 
 
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="#">FITBOT</a>
     <center>
         <h3 style="margin-left: 346px;">Welcome! Please Register in below</h3>

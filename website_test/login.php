@@ -50,10 +50,22 @@ if(isset($_POST) & !empty($_POST)) {
 
     <!-------------Header-------------------->
 
+    <!--------This header is only for (login.php) page and not for index.php (Register) page------->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">FITBOT</a>
+        <center>
+            <h3 style="margin-left: 400px; color: white;">Please login below</h3>
+        </center>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
 
 
 
-    <?php include "common/nav.php"; ?>
+        </button>
+        <div class="collapse navbar-collapse" href="workout_add.php" id="navbarNav">
+
+        </div>
+    </nav>
 
 
     <section class="container_imagelogin">
@@ -64,16 +76,9 @@ if(isset($_POST) & !empty($_POST)) {
         <div class="container">
             <div class="Welcome-Text_login">
 
-                <!--
                 <center>
-                    <h1> Dare to be great </h1>
+                    <h3 style="margin-left: 1px; padding-top: 30px;"> Login and get started! </h3>
                 </center>
-
-                <center>
-                    <p>Maximum results in minimum time</p>
-                </center>
--->
-
 
 
 
@@ -86,7 +91,7 @@ if(isset($_POST) & !empty($_POST)) {
                 <?php if(isset($fmsg)){ ?><div class="alert alert-danger" role="alert"> <?php echo $fmsg; ?> </div>
                 <?php } ?>
                 <form class="form-signin" method="POST">
-                    <h2 class="form-signin-heading" style="margin-left: 428px; padding-top: 8px;">Please Login</h2>
+                    <h2 class="form-signin-heading" style="margin-left: 428px; padding-top: 42px;"></h2>
                     <div class="input-group">
                         <span class="input-group-addon" id="basic-addon1"></span>
                         <input type="text" name="username" class="form-control" placeholder="Username" required>
@@ -96,15 +101,15 @@ if(isset($_POST) & !empty($_POST)) {
 
 
 
-                    <br>
-
                     <label for="inputPassword" class="sr-only">Password</label>
                     <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required>
 
                     <br>
 
                     <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
-                    <a class="btn btn-lg btn-primary btn-block" href="index.php">Register</a>
+                    <a class="btn btn-lg btn-primary btn-block" href="index(register-page).php">Register</a>
+
+
 
 
                 </form>

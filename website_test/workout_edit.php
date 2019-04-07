@@ -4,7 +4,7 @@
 if (isset($_POST['submit'])) {
 	
     // include the config file that we created before
-    require "./config.php"; 
+    require "./configcontent.php"; 
     
     // this is called a try/catch statement 
 	try {
@@ -33,29 +33,28 @@ if (isset($_POST['submit'])) {
 <?php include "common/nav.php"; ?>
 
 
-   
-
-    <section class="container_image3">
 
 
-    </section>
-     
+<section class="container_image3">
 
-    <section id="Index-Page-Welcome3">
-        <div class="container-workout-edit">
+
+</section>
+
+
+<section id="Index-Page-Welcome3">
+    <div class="container-workout-edit">
         <div class="Welcome-Text_workout_edit">
-            
-        <center><h1> Things change overtime, so do workouts </h1></center>
-            
-           
-            
-        </div>
-        
-        
-        
-        </div>
-        
-    </section>
+
+            <center>
+                <h1> Things change overtime, so do workouts </h1>
+            </center>
 
 
-    
+
+        </div>
+
+
+
+    </div>
+
+</section>

@@ -9,17 +9,20 @@ if(isset($_POST) & !empty($_POST)) {
     
     $result = mysqli_query($connection, $sql);
     if($result){
-        echo  "User Registration Successful. Now please login";
-        
+        echo  "User Registration Successful. Now please login ";
     }else{
         
         echo mysqli_error($connection);
-        echo  "User registration failed, please try again";
+        echo  "User Registration Failed";
     }
 }
 
 
+
+
 ?>
+
+
 
 
 
@@ -52,13 +55,13 @@ if(isset($_POST) & !empty($_POST)) {
 
 
 
+    <!----This header is for index.php (Register page) only and not for login.php page--------->
 
 
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">FITBOT</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index(register-page).php">FITBOT</a>
         <center>
-            <h3 style="margin-left: 346px;">Welcome! Please Register in below</h3>
+            <h3 style="margin-left: 346px; color: white;">Welcome! Please Register below</h3>
         </center>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -66,11 +69,9 @@ if(isset($_POST) & !empty($_POST)) {
 
 
         </button>
-        <!--
         <div class="collapse navbar-collapse" href="workout_add.php" id="navbarNav">
 
         </div>
--->
     </nav>
 
 
@@ -103,7 +104,7 @@ if(isset($_POST) & !empty($_POST)) {
                 <?php } ?>
 
                 <form class="form-signin" method="POST">
-                    <h2 class="form-signin-heading" style="margin-left: 428px; padding-top: 42px;">Please Register</h2>
+                    <h2 class="form-signin-heading" style="margin-left: 428px; padding-top: 42px;">Register Now!</h2>
                     <div class="input-group">
                         <span class="input-group-addon" id="basic-addon1"></span>
                         <input type="text" name="username" class="form-control" placeholder="Username" required>
@@ -121,7 +122,9 @@ if(isset($_POST) & !empty($_POST)) {
 
                     <br>
 
-                    <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
+
+
+                    <button class="btn btn-lg btn-primary btn-block" type="submit" name="register_button">Register</button>
                     <a class="btn btn-lg btn-primary btn-block" href="login.php">Login</a>
                 </form>
 

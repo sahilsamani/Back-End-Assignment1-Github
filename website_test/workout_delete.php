@@ -1,6 +1,6 @@
 <?php 
     // include the config file 
-    require "./config.php";
+    require "./configcontent.php";
     require "./common-part2.php";
     // This code will only run if the delete button is clicked
     if (isset($_GET["id"])) {
